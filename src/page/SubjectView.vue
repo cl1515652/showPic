@@ -23,24 +23,23 @@
  -->
 
 <template>
-  <div class="subject-view" id="subject" >
+  <div class="subject-view" id="subject">
     this is subject-view !
+
   </div>
 </template>
 
 <script>
+
+
+
   export default {
     name: "subject-view",
-    computed:{
-
-
-    },
-
   }
 </script>
 
 <style scoped>
-  .subject-view{
+  .subject-view {
     width: 100px;
     height: 200px;
     float: left;

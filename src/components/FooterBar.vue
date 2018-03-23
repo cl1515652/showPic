@@ -18,11 +18,14 @@
           <h3>PO-PIC 0.1 BATE.</h3>
         </div>
         <div class="cot">
-          <a href="#" target="_blank">
+          <el-tooltip class="item" effect="dark" placement="top-start">
+            <div slot="content">
+              <img src="../assets/1521651351.jpg" style="width: 100px;height: 100px;">
+            </div>
             <icon name="wchart" scale="5" ></icon>
-          </a>
+          </el-tooltip>
 
-          <a style="margin-left: 20px" href="#" target="_blank">
+          <a style="margin-left: 20px" href="https://github.com/cl1515652/showPic" target="_blank">
             <icon color="lawngreen" name="github" scale="5"></icon>
           </a>
         </div>
@@ -76,10 +79,6 @@
 
   a{
     color:gray;
-  }
-
-  a:hover{
-    color:lawngreen;
   }
 
 </style>

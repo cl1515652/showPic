@@ -48,7 +48,7 @@
             break;
           case '7':
             //console.log("in 7")
-            this.$router.push({ name: 'indexlist'})
+            this.$router.push({ name: 'TagShow'})
             break;
           case '8':
             //console.log("in 8")

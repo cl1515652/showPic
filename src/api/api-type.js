@@ -6,4 +6,6 @@ export const UPDATE_PIC = 'UPDATE_PIC'  //更新
 
 export const ASSESS_PIC = 'ASSESS_PIC'  //评分
 
+export const TAG_MAP = "TAG_MAP";
+
 

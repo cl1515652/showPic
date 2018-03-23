@@ -129,5 +129,26 @@ export default {
         para.data = data;
         callBack(para);
       });
+  },
+
+  //tagmap 统计
+  [types.TAG_MAP](para,callBack) { //查询pic list
+    var _url = urlPath.LOCALHOST + urlPath.TAG_MAP;
+    var type = para.type;
+
+    _url += "?";
+    if(type){
+      _url += "type="+type + "&"
+    }
+
+    axios({
+      url: _url,
+      adapter: jsonpAdapter
+    })
+      .then((res) => {
+        var data = res.data;
+        para.data = data;
+        callBack(para);
+      });
   }
 }

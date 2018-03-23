@@ -1,6 +1,7 @@
 //const host = window.location.hostname;
-const host = "47.88.62.158"
+//const host = "47.88.62.158"
 const port = '8008';
+const host = window.location.hostname;
 export const LOCALHOST = 'http://'+host+':'+port+'';
 export const PIC_LIST = '/api/v1/picList'
 
@@ -11,3 +12,6 @@ export const UPDATE_PIC = '/api/v1/updatePic'
 export const UP_LOAD_PICS = '/api/v1/upLoadPic'
 
 export const ASSESS_PIC = '/api/v1/assessPic'
+
+export const TAG_MAP = '/api/v1/tagMap'
+

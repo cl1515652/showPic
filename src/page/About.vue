@@ -24,8 +24,9 @@
 
 <template>
   <div>
-
-
+    <h3>开发用意</h3>
+    <h3>开发思路</h3>
+    <h3>涉及技术</h3>
 
   </div>
 </template>

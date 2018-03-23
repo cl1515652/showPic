@@ -12,6 +12,9 @@ const state = {
   searchPics: [],    //搜索的图片信息
   searchInfo: {},    //搜索信息
 
+  tagMapMaxCount:[],  //占比最多的标签
+  tagMapMaxHot:[],    //最热门的标签
+
 }
 
 // getters
@@ -24,6 +27,12 @@ const getters = {
   },
   newPics:(state) =>{
     return state.newPics;
+  },
+  tagMapMaxCount:(state) => {
+    return state.tagMapMaxCount;
+  },
+  tagMapMaxHot:(state) => {
+    return state.tagMapMaxHot;
   }
 
 }
@@ -96,6 +105,21 @@ const actions = {
       para.success();
     })
 
+  },
+  tagMap({commit, state}, para) {
+    para.commit = commit;
+
+    var type = para.type;
+    var success = para.success;
+    api.TAG_MAP(para, ({commit, data}) => {
+      //设置 tag count 数据
+      if(type === 'count'){
+        commit(types.SEL_TAGMAX,data);
+      }else if(type === 'hot'){
+        commit(types.SEL_TAGHOT,data);
+      }
+      success();
+    })
   }
 
 }
@@ -127,7 +151,14 @@ const mutations = {
   //选中照片
   [types.SEL_PIC](stata, pic) { //加载热门图片
     stata.selPic = pic;
-  }
+  },
+  //设置标签排行
+  [types.SEL_TAGMAX](stata,data) { //加载热门图片
+    stata.tagMapMaxCount = data;
+  },
+  [types.SEL_TAGHOT](stata,data) { //加载热门图片
+    stata.tagMapMaxHot = data;
+  },
 
 
 

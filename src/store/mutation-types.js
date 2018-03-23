@@ -4,3 +4,6 @@ export const QUERY_PIC = 'QUERY_PIC'
 
 
 export const SEL_PIC = 'SEL_PIC'
+
+export const SEL_TAGMAX = 'SEL_TAGMAX'  //标签排行
+export const SEL_TAGHOT = 'SEL_TAGHOT'  //标签排行
