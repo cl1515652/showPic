@@ -6,6 +6,8 @@ import IndexList from '@/components/IndexList'
 import UpLoadPic from '@/components/UpLoadPic'
 import TagShow from '@/page/TagShow'
 
+import About from '@/page/About'
+
 
 
 import Detail from '@/page/Detail'
@@ -47,8 +49,11 @@ export default new Router({
               path: '/home/tagshow',
               name: 'TagShow',
               component: TagShow
+            },{
+              path: '/home/About',
+              name: 'About',
+              component: About
             }
-
           ]
         }
       ]

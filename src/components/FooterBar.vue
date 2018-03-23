@@ -25,7 +25,7 @@
             <icon name="wchart" scale="5" ></icon>
           </el-tooltip>
 
-          <a style="margin-left: 20px" href="https://github.com/cl1515652/showPic" target="_blank">
+          <a style="margin-left: 20px" href="https://github.com/cl1515652/showPic/tree/cl_v2" target="_blank">
             <icon color="lawngreen" name="github" scale="5"></icon>
           </a>
         </div>

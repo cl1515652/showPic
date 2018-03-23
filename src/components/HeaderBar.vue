@@ -52,7 +52,7 @@
             break;
           case '8':
             //console.log("in 8")
-            this.$router.push({ name: 'indexlist'})
+            this.$router.push({ name: 'About'})
             break;
         }
       },
